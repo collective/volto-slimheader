@@ -11,8 +11,6 @@ yarn add volto-slimheader
 
 Created with [voltocli](https://github.com/nzambello/voltocli).
 
-If you are using Volto < 16, then use v1.1.0.
-
 ## Usage
 
 To customize the `SlimHeaderConfigurationForm` component, you can now create your own component in your site and replace it using the Volto component registry in your site config file:
