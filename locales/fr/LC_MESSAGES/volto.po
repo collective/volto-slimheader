@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Add menu path
+msgid "slimheader-add-rootpath"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Add menu item
+msgid "slimheader-addmenuitem"
+msgstr ""
+
+#: components/SlimHeader
+# defaultMessage: Slim header
+msgid "slimheader-arialabel"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Delete
+msgid "slimheader-delete-button"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: Delete menu item
+msgid "slimheader-deletemenuitem-button"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Select a menu item
+msgid "slimheader-emptyActiveMenuItem"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Select a menu path
+msgid "slimheader-emptyActiveMenuPath"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: In evidence
+msgid "slimheader-inevidence"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: Link
+msgid "slimheader-linkUrl"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: Type an external url, or select an internal url clicking on the right button
+msgid "slimheader-linkUrl_description"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Menu items
+msgid "slimheader-menuitems-header"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Move menu item down
+msgid "slimheader-move-menuitem-down"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Move menu item up
+msgid "slimheader-move-menuitem-up"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Root path
+msgid "slimheader-rootpath"
+msgstr ""
+
+#: components/SlimHeader
+# defaultMessage: Slim header
+msgid "slimheader-selected"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: Title
+msgid "slimheader-title"
+msgstr ""
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: Visible
+msgid "slimheader-visible"
+msgstr ""

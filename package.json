@@ -1,0 +1,37 @@
+{
+  "name": "volto-slimheader",
+  "version": "3.0.0",
+  "description": "Volto addon for a customizable slimheader",
+  "main": "src/index.js",
+  "repository": "https://github.com/collective/volto-slimheader.git",
+  "homepage": "https://github.com/collective/volto-slimheader.git#readme",
+  "bugs": "https://github.com/collective/volto-slimheader.git/issues",
+  "author": "collective",
+  "license": "MIT",
+  "keywords": [
+    "volto-addon",
+    "volto",
+    "plone",
+    "react"
+  ],
+  "scripts": {
+    "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@plone/scripts": "^2.0.0",
+    "@release-it/conventional-changelog": "^2.0.1",
+    "husky": "^6.0.0",
+    "release-it": "^14.10.1"
+  },
+  "peerDependencies": {
+    "@plone/volto": ">=16.0.0-alpha.38"
+  }
+}

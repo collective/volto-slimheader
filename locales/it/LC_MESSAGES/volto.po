@@ -1,0 +1,97 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Add menu path
+msgid "slimheader-add-rootpath"
+msgstr "Aggiungi una radice di navigazione"
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Add menu item
+msgid "slimheader-addmenuitem"
+msgstr "Aggiungi un link in testata"
+
+#: components/SlimHeader
+# defaultMessage: Slim header
+msgid "slimheader-arialabel"
+msgstr "Link aggiuntivi in testata"
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Delete
+msgid "slimheader-delete-button"
+msgstr "Elimina"
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: Delete menu item
+msgid "slimheader-deletemenuitem-button"
+msgstr "Elimina questa voce"
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Select a menu item
+msgid "slimheader-emptyActiveMenuItem"
+msgstr "Scegli una voce"
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Select a menu path
+msgid "slimheader-emptyActiveMenuPath"
+msgstr "Seleziona una radice di navigazione"
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: In evidence
+msgid "slimheader-inevidence"
+msgstr "In evidenza"
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: Link
+msgid "slimheader-linkUrl"
+msgstr "Link"
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: Type an external url, or select an internal url clicking on the right button
+msgid "slimheader-linkUrl_description"
+msgstr "Scrivi un url esterno o seleziona un URL interno cliccando sul bottone a destra"
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Menu items
+msgid "slimheader-menuitems-header"
+msgstr "Voci aggiuntive per la testata"
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Move menu item down
+msgid "slimheader-move-menuitem-down"
+msgstr "Sposta dopo"
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Move menu item up
+msgid "slimheader-move-menuitem-up"
+msgstr "Sposta prima"
+
+#: widget/SlimHeaderConfigurationWidget
+# defaultMessage: Root path
+msgid "slimheader-rootpath"
+msgstr "Radice di navigazione"
+
+#: components/SlimHeader
+# defaultMessage: Slim header
+msgid "slimheader-selected"
+msgstr "Menu selezionato"
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: Title
+msgid "slimheader-title"
+msgstr "Titolo"
+
+#: widget/SlimHeaderConfigurationForm
+# defaultMessage: Visible
+msgid "slimheader-visible"
+msgstr "Visibile"
