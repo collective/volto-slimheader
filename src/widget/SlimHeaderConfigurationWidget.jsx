@@ -57,6 +57,7 @@ const defaultMenuItem = (title) => ({
   title,
   visible: true,
   linkUrl: null,
+  inEvidence: false,
 });
 
 const defaultRootMenu = (title) => ({
@@ -310,7 +311,7 @@ const SlimHeaderConfigurationWidget = ({
                         activeMenuItem <
                           menuConfiguration[activeMenu].items?.length ? (
                           <Component
-                            componentName="SlimHeaderConfigurationWidget"
+                            componentName="SlimHeaderConfigurationForm"
                             id={`${activeMenu}-${activeMenuItem}`}
                             menuItem={
                               menuConfiguration[activeMenu].items[

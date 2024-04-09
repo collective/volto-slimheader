@@ -44,6 +44,7 @@ const SlimHeaderConfigurationForm = ({
   openObjectBrowser,
 }) => {
   const intl = useIntl();
+  console.log(menuItem);
 
   const preventClick = (e) => {
     e.preventDefault();
