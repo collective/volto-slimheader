@@ -1,3 +1,10 @@
+### [0.1.1](https://github.com/collective/volto-slimheader/compare/v0.1.0...v0.1.1) (2024-04-09)
+
+
+### Bug Fixes
+
+* include form ([facfa01](https://github.com/collective/volto-slimheader/commit/facfa019e2459bc0286c95c850a4676e5d84e846))
+
 ## 0.1.0 (2024-03-15)
 
 
