@@ -1,3 +1,15 @@
+### [0.1.2](https://github.com/collective/volto-slimheader/compare/v0.1.1...v0.1.2) (2024-06-07)
+
+
+### Bug Fixes
+
+* match path ([#1](https://github.com/collective/volto-slimheader/issues/1)) ([e259d52](https://github.com/collective/volto-slimheader/commit/e259d52b2137f0121cf021f3143f95aa13a254f1))
+
+
+### Maintenance
+
+* yarn ([2bff0fa](https://github.com/collective/volto-slimheader/commit/2bff0fa6e2f4ca0a6dc3df8696d4c93b2f4ae942))
+
 ### [0.1.1](https://github.com/collective/volto-slimheader/compare/v0.1.0...v0.1.1) (2024-04-09)
 
 
