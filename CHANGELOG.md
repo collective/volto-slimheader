@@ -1,3 +1,10 @@
+### [0.1.4](https://github.com/collective/volto-slimheader/compare/v0.1.3...v0.1.4) (2024-12-24)
+
+
+### Maintenance
+
+* removed volto imports from barrel files! ([f09a30c](https://github.com/collective/volto-slimheader/commit/f09a30cc4696e9679aec25b17e15b9503c23354b))
+
 ### [0.1.3](https://github.com/collective/volto-slimheader/compare/v0.1.2...v0.1.3) (2024-07-31)
 
 
