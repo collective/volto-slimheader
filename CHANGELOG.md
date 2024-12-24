@@ -1,3 +1,11 @@
+### [0.1.5](https://github.com/collective/volto-slimheader/compare/v0.1.4...v0.1.5) (2024-12-24)
+
+
+### Bug Fixes
+
+* import ([87a616c](https://github.com/collective/volto-slimheader/commit/87a616c4adc47f31df10fa0096179dd7255a0067))
+* yarn files ([dd2ad58](https://github.com/collective/volto-slimheader/commit/dd2ad58f94ac022db7b755951e03801b63429ee5))
+
 ### [0.1.4](https://github.com/collective/volto-slimheader/compare/v0.1.3...v0.1.4) (2024-12-24)
 
 
