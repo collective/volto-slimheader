@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { isMatch } from 'lodash';
 import { useIntl, defineMessages } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
@@ -23,14 +23,23 @@ const SlimHeader = ({ pathname, children }) => {
   const intl = useIntl();
   const dispatch = useDispatch();
 
+  const [items, setItems] = useState([]);
+  const loading = useSelector((state) => state.slimHeader?.loadingResults);
   const menuItems = useSelector((state) => state.slimHeader?.result);
-  const items = getItemsByPath(menuItems, pathname)?.filter(
-    (item) => item.visible,
-  );
 
   useEffect(() => {
-    dispatch(getSlimHeader());
-  }, [dispatch]);
+    if (!menuItems && !loading) {
+      dispatch(getSlimHeader());
+    }
+  }, []);
+
+  useEffect(() => {
+    const slimHeaderItems = getItemsByPath(menuItems, pathname)?.filter(
+      (item) => item.visible,
+    );
+
+    setItems(slimHeaderItems);
+  }, [pathname, menuItems]);
 
   const isMenuActive = (itemUrl = '') => {
     const url = flattenToAppURL(itemUrl);
