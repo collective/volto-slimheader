@@ -1,3 +1,11 @@
+### [0.1.6](https://github.com/collective/volto-slimheader/compare/v0.1.5...v0.1.6) (2026-03-05)
+
+
+### Bug Fixes
+
+* removed unused prevent click ([#2](https://github.com/collective/volto-slimheader/issues/2)) ([ea7c496](https://github.com/collective/volto-slimheader/commit/ea7c496032beb52b169d5c6ed0b3f388a28029e2))
+* unnecessary api calls ([283003a](https://github.com/collective/volto-slimheader/commit/283003ac8639b65837682c53a2a72c0830f8c820))
+
 ### [0.1.5](https://github.com/collective/volto-slimheader/compare/v0.1.4...v0.1.5) (2024-12-24)
 
 
