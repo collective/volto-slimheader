@@ -4,12 +4,14 @@ import SlimHeaderConfigurationForm from './widget/SlimHeaderConfigurationForm';
 import { getSlimHeader } from './actions';
 import { getItemsByPath } from './utils';
 import SlimHeader from './components/SlimHeader';
+import SlimHeaderItem from './components/SlimHeaderItem';
 
 export {
   SlimHeaderConfigurationWidget,
   SlimHeaderConfigurationForm,
   getSlimHeader,
   SlimHeader,
+  SlimHeaderItem,
   getItemsByPath,
 };
 
@@ -18,6 +20,16 @@ export default (config) => {
     name: 'SlimHeaderConfigurationForm',
     component: SlimHeaderConfigurationForm,
   });
+
+  config.registerComponent({
+    name: 'SlimHeaderItem',
+    component: SlimHeaderItem,
+  });
+
+  config.settings['volto-slimheader'] = {
+    extraFields: [],
+    ...(config.settings['volto-slimheader'] ?? {}),
+  };
 
   config.widgets.id = {
     ...config.widgets.id,

@@ -81,7 +81,7 @@ msgstr "Sposta prima"
 msgid "slimheader-rootpath"
 msgstr "Radice di navigazione"
 
-#: components/SlimHeader
+#: components/SlimHeaderItem
 # defaultMessage: Slim header
 msgid "slimheader-selected"
 msgstr "Menu selezionato"
