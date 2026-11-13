@@ -83,7 +83,7 @@ msgstr ""
 msgid "slimheader-rootpath"
 msgstr ""
 
-#: components/SlimHeader
+#: components/SlimHeaderItem
 # defaultMessage: Slim header
 msgid "slimheader-selected"
 msgstr ""

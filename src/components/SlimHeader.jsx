@@ -3,29 +3,30 @@ import { isMatch } from 'lodash';
 import { useIntl, defineMessages } from 'react-intl';
 import { useDispatch, useSelector } from 'react-redux';
 import { flattenToAppURL } from '@plone/volto/helpers/Url/Url';
-import UniversalLink from '@plone/volto/components/manage/UniversalLink/UniversalLink';
+import Component from '@plone/volto/components/theme/Component/Component';
 import { getSlimHeader } from '../actions';
 import { getItemsByPath } from '../utils';
 import { Menu } from 'semantic-ui-react';
 
 const messages = defineMessages({
-  slimheader_selected: {
-    id: 'slimheader-selected',
-    defaultMessage: 'Slim header',
-  },
   slimheader_aria: {
     id: 'slimheader-arialabel',
     defaultMessage: 'Slim header',
   },
 });
 
+const getVisibleItems = (menuItems, pathname) =>
+  getItemsByPath(menuItems, pathname ?? '')?.filter((item) => item.visible);
+
 const SlimHeader = ({ pathname, children }) => {
   const intl = useIntl();
   const dispatch = useDispatch();
 
-  const [items, setItems] = useState([]);
   const loading = useSelector((state) => state.slimHeader?.loadingResults);
   const menuItems = useSelector((state) => state.slimHeader?.result);
+  const [items, setItems] = useState(() =>
+    getVisibleItems(menuItems, pathname),
+  );
 
   useEffect(() => {
     if (!menuItems && !loading) {
@@ -34,11 +35,7 @@ const SlimHeader = ({ pathname, children }) => {
   }, []);
 
   useEffect(() => {
-    const slimHeaderItems = getItemsByPath(menuItems, pathname)?.filter(
-      (item) => item.visible,
-    );
-
-    setItems(slimHeaderItems);
+    setItems(getVisibleItems(menuItems, pathname));
   }, [pathname, menuItems]);
 
   const isMenuActive = (itemUrl = '') => {
@@ -63,20 +60,13 @@ const SlimHeader = ({ pathname, children }) => {
             let url = item.href || item.linkUrl?.[0]?.['@id'] || '';
 
             return (
-              <UniversalLink
-                href={url === '' ? '/' : flattenToAppURL(url)}
+              <Component
+                componentName="SlimHeaderItem"
                 key={i}
-                className={`item ${isMenuActive(url) && 'active'}`}
-              >
-                <span className={item.inEvidence ? 'in-evidence' : ''}>
-                  {item.title}
-                </span>
-                {isMenuActive(url) && (
-                  <span className="sr-only">
-                    {intl.formatMessage(messages.slimheader_selected)}
-                  </span>
-                )}
-              </UniversalLink>
+                item={item}
+                href={url === '' ? '/' : flattenToAppURL(url)}
+                active={isMenuActive(url)}
+              />
             );
           })}
           {children && children}

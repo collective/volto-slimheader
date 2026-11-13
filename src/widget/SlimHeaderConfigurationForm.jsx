@@ -2,7 +2,9 @@ import React, { useEffect } from 'react';
 import { compose } from 'redux';
 import { defineMessages, useIntl } from 'react-intl';
 import { Form, Grid, Button } from 'semantic-ui-react';
+import config from '@plone/volto/registry';
 import { flattenToAppURL } from '@plone/volto/helpers/Url/Url';
+import Field from '@plone/volto/components/manage/Form/Field';
 import withObjectBrowser from '@plone/volto/components/manage/Sidebar/ObjectBrowser';
 import TextWidget from '@plone/volto/components/manage/Widgets/TextWidget';
 import CheckboxWidget from '@plone/volto/components/manage/Widgets/CheckboxWidget';
@@ -88,6 +90,12 @@ const SlimHeaderConfigurationForm = ({
 
   const url = menuItem.linkUrl?.[0]?.['@id'] ?? menuItem.href ?? null;
 
+  const { extraFields = [] } = config.settings['volto-slimheader'] ?? {};
+  const fields =
+    typeof extraFields === 'function'
+      ? extraFields({ intl, menuItem })
+      : extraFields;
+
   return (
     <>
       <TextWidget
@@ -146,6 +154,15 @@ const SlimHeaderConfigurationForm = ({
         value={!!menuItem.inEvidence}
         onChange={(id, value) => onChangeFormData('inEvidence', value)}
       />
+      {fields.map(({ id: fieldId, ...field }) => (
+        <Field
+          key={fieldId}
+          {...field}
+          id={`${id}-${fieldId}`}
+          value={menuItem[fieldId]}
+          onChange={(_, value) => onChangeFormData(fieldId, value)}
+        />
+      ))}
 
       <Form.Field inline className="delete wide" id="menu-delete">
         <Grid>
