@@ -1,3 +1,21 @@
+## [0.2.0](https://github.com/collective/volto-slimheader/compare/v0.1.5...v0.2.0) (2026-11-13)
+
+
+### Features
+
+* extra form fields and replaceable SlimHeaderItem component ([#3](https://github.com/collective/volto-slimheader/issues/3)) ([b564a15](https://github.com/collective/volto-slimheader/commit/b564a1585cc201e28de3a4d72fc572fc8fd5875c))
+
+
+### Bug Fixes
+
+* removed unused prevent click ([#2](https://github.com/collective/volto-slimheader/issues/2)) ([ea7c496](https://github.com/collective/volto-slimheader/commit/ea7c496032beb52b169d5c6ed0b3f388a28029e2))
+* unnecessary api calls ([283003a](https://github.com/collective/volto-slimheader/commit/283003ac8639b65837682c53a2a72c0830f8c820))
+
+
+### Maintenance
+
+* release v0.1.6 ([076622f](https://github.com/collective/volto-slimheader/commit/076622f8ae4b0fb63f891d360abc04e32ff98d29))
+
 ### [0.1.6](https://github.com/collective/volto-slimheader/compare/v0.1.5...v0.1.6) (2026-03-05)
 
 
